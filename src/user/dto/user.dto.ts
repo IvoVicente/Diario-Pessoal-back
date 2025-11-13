@@ -3,7 +3,6 @@ import { IsEmail, IsNotEmpty, MinLength } from "class-validator";
 
 export class UserDto{
 
-
    @IsNotEmpty({message:'O e-mail não pode ser vazio.'})
    @IsEmail({},{message:'forneça um e-mail válido.'})
    email: string;
